@@ -28,9 +28,8 @@ namespace CarDealership.Controllers
       myCar.Price = price;
       myCar.Miles = miles;
       myCar.Message = message;
-      
+
       return RedirectToAction("Index");
     }
-
   }
 }
