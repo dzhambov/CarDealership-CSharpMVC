@@ -24,6 +24,11 @@ namespace CarDealership.Controllers
     public ActionResult Create(string makeModel, int price, int miles, string message)
     {
       Car myCar = new Car(makeModel, price, miles, message);
+      myCar.MakeModel = makeModel;
+      myCar.Price = price;
+      myCar.Miles = miles;
+      myCar.Message = message;
+      
       return RedirectToAction("Index");
     }
 
